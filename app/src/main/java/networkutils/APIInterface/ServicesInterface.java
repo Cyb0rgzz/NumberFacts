@@ -27,4 +27,10 @@ public interface ServicesInterface {
     })
     @GET("random/trivia")
     Call<NumbersModal> getNumberTriviaRandomFacts();
+
+    @Headers({
+            "Content-Type: application/json",
+    })
+    @GET("random/date")
+    Call<NumbersModal> getNumberDateRandomFacts();
 }
